@@ -1,0 +1,40 @@
+    public static String langCheck(String x){
+    	int counta = 0;
+    	int countb = 0;
+    	int xl = x.length();
+    	for(int y = 0; y<xl;y++){
+    		if(x.char(y) == 'a'){
+    			counta++;
+    		}
+        	
+        	if(x.char(y) == 'b'){
+    			countb++;
+    		}
+    		
+    		else{
+    			return x + " is not in either language";
+    		}
+        }//end of for
+        
+        for(int w = 0; w<xl; w++){
+        	if(w > counta-1 && x.char(w)!= 'a'){
+        		return x + " is not in either language";
+        	}
+        	if(w < counta-1 && x.char(w)!= 'b'){
+        		return x + " is not in either language";
+        	}
+        }
+        
+        int c = countb / 2;
+        
+        if(c==a && counta < countb){
+        	return x + " is in language 14.a and 14.b"
+        }
+        if(counta < countb){
+        	return x + " is in language 14.a"
+        }
+        if(c==a){
+        	return x + " is in language 14.b"
+        }
+        return x + " is not in either language"
+}
